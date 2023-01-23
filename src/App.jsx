@@ -1,6 +1,7 @@
 import './App.css'
-import About from './Pages/About/About'
-import WhyUs from './Pages/Us/WhyUs'
+import About from './Components/About/About'
+import Hero from './Components/Hero/Hero'
+import WhyUs from './Components/Us/WhyUs'
 
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <div className="App">
+      <Hero />
       <About />
       <WhyUs />
     </div>

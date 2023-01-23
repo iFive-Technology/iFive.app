@@ -58,6 +58,10 @@
     height: 100%;
     margin-top: 35px;
     object-fit: contain; 
+<<<<<<< HEAD:src/Pages/About/About.css
+=======
+ 
+>>>>>>> 4349ccdb93efc3c6d3f82d321ed0cdbbe01bf952:src/Components/About/About.css
     animation: levitation 2s infinite;
     /* border: 1px solid white; */
 }
