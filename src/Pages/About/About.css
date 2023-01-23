@@ -50,7 +50,7 @@
 .image{
     width: 65%;
     height: 85%;
-    z-index: 30;
+    z-index: 20;
     margin-top: 60px;
 }
 .image img{
