@@ -55,9 +55,7 @@
     width: 95%;
     height: 95%;
     object-fit: contain; 
-    position: absolute;
-    bottom: -8%;
-    right: -18%;
+ 
     animation: levitation 2s infinite;
 }
 

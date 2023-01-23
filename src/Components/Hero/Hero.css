@@ -1,0 +1,11 @@
+.Hero{
+    height: 730px;
+}
+.cus-triger{
+    height: 550px;
+}
+.customer:hover, .enginner:hover{ 
+    transition: 0.2s;
+   border-bottom:2px solid red ; 
+   color: rgba(0, 0, 0, 0.219);
+}
