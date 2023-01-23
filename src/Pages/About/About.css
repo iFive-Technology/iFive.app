@@ -1,37 +1,37 @@
 .about{
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    height: 600px;
     background-color: rgb(23, 22, 27);
     color: azure;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 20px;
+    padding: 0 20px;
 }
 
 .text-area{
-    width: 68%;
+    width: 70%;
     height: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-    margin-left: 2rem;
-    padding: 65px;
+    margin-left: 5rem;
+    padding: 3rem 2rem;
 }
 
 .title{ 
-    font-size: 3.2rem;
-    font-weight: 700;
-    /* border: 1px solid white; */
+    font-size: 3rem;
+    font-weight: 600;
     line-height: 1.2;
     margin-top: -30px;
 }
 
 .about-text{
-    font-size: 17px;
+    font-size: 15px;
     color: rgb(82, 77, 77);
-    letter-spacing: 1.2;
+    letter-spacing: 1.1;
     word-spacing: 1.1;
 }
 
@@ -50,15 +50,16 @@
 .image{
     width: 65%;
     height: 85%;
+    z-index: 30;
+    margin-top: 60px;
 }
 .image img{
     width: 95%;
-    height: 95%;
+    height: 100%;
+    margin-top: 35px;
     object-fit: contain; 
-    position: absolute;
-    bottom: -8%;
-    right: -18%;
     animation: levitation 2s infinite;
+    /* border: 1px solid white; */
 }
 
 @keyframes levitation {
@@ -66,3 +67,56 @@
     50% { transform: translateY(-20px); }
     100% { transform: translateY(0); }
   }
+
+  @media (max-width: 840px) {
+    .about {
+    min-height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 3rem;
+    }
+
+    .text-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 300px;
+        padding:10px 20px;
+    }
+    .title{ 
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 20px;
+    }
+
+    .about-text{
+        font-size: 14px;
+        letter-spacing: 1.1;
+        word-spacing: 1;
+    }
+    
+    .btn-learn{
+        background: rgb(218, 218, 202);
+        width: 95px;
+        padding: 11px 12px;
+        border-radius: 50px;
+        font-size: 13px;
+        font-weight: 500;
+        transition: all .5s ease;
+    }
+
+    .image{
+        width: 450px;
+        height: 450px;
+        z-index: 20;
+        margin-top: -5px;
+    }
+
+    .image img{
+       width: 90%;
+        height: 75%;
+        object-fit: contain; 
+    }
+}
