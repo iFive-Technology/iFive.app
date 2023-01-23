@@ -11,7 +11,7 @@ const About = () => {
                 <button className='btn-learn'>About Us</button>
             </div>
             <div className="image">
-                <img src="https://o.remove.bg/downloads/7c63f37f-9735-4e35-a87b-91c7c6438165/phone_1-removebg-preview.png" />
+                <img src="https://fixteam.ancorathemes.com/wp-content/uploads/2017/07/phone_1.png" />
             </div>
         </div>
     )

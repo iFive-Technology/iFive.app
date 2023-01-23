@@ -1,14 +1,15 @@
-import { useState } from 'react'
 import './App.css'
+import About from './Pages/About/About'
+import WhyUs from './Pages/Us/WhyUs'
+
 
 function App() {
-  
+
 
   return (
     <div className="App">
-      <h1 class="text-3xl bg-green-500 font-bold underline">
-    COMING SOON!
-  </h1>
+      <About />
+      <WhyUs />
     </div>
   )
 }
