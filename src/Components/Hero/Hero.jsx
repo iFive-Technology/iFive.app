@@ -24,10 +24,10 @@ const Hero = () => {
       <>
         <div className=" h-full w-full flex flex-col items-center ">
           <div className="h-64 flex flex-col  items-center ">
-            <h1 className="text-5xl font-bold mt-10 w-10/12 ">
+            <h1 className="md:text-5xl text-3xl font-bold mt-10 md:w-10/12 md:px-0  px-2">
               Get in the Enginner seat and get paid
             </h1>
-            <p className="text-1xl mt-5">
+            <p className="md:text-1xl mt-5 px-2 md:px-0">
               Drive on the platform with the largest network of active riders.
             </p>
           </div>
@@ -53,7 +53,7 @@ const Hero = () => {
   const Customer = (
       <>
         <div className="  w-full flex flex-col items-center ">
-        <div className="text-5xl w-10/12 flex justify-center  font-bold mt-5 text-black">
+        <div className="md:text-5xl text-3xl w-10/12 flex justify-center  font-bold mt-5 text-black">
             <h1>Order for a repair now</h1>
         </div>
 
@@ -101,21 +101,21 @@ const Hero = () => {
       >
         <NavBar />
 
-        <div className="h-full flex items-center">
+        <div className="h-full flex items-center justify-center md:justify-start">
           <>
             {/* small cont inside the hero section */}
-            <div className="bg-white w-4/12 cus-triger ml-40">
+            <div className="bg-white md:w-4/12 w-11/12 cus-triger md:ml-40">
               {/* small nav  start */}
               <div className="w-full flex justify-between  items-center h-20 bg-pink-200">
                 <div
                   className="flex justify-center w-full h-full items-center flex-col customer"
                   onClick={handleSwitch}
                 >
-                  <img src={customer} alt="" className="w-8" />{" "}
+                  <img src={customer} alt="" className="md:w-8 w-7" />{" "}
                   <p>Book Repair</p>
                 </div>
                 <div className="w-full h-full flex justify-center items-center flex-col enginner"  onClick={Enginner}>
-                  <img src={enginner} alt="" className="w-8" />{" "}
+                  <img src={enginner} alt="" className="md:w-8 w-7" />{" "}
                   <p>Join Enginner Team</p>
                 </div>
               </div>
