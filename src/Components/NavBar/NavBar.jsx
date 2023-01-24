@@ -38,7 +38,7 @@ const handleNavBar = () =>{
 <div className='bg-black h-14 text-white flex items-center px-3 justify-between'>
     <div className=''><img src={logo} alt="" className='logo' /></div>
 
-<div className=' w-4/12 mr-20'>
+<div className=' lg:w-4/12 md:w-7/12  lg:mr-20 md:mr-5'>
     <ul className='flex justify-around w-full items-center text-1xl '>
         <li className='cursor-pointer list-none'>Service</li>
         <li className='cursor-pointer list-none'> <Dropdown
