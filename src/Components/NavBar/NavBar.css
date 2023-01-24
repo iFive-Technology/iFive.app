@@ -1,3 +1,7 @@
 .logo{
     max-width: 200px;
 }
+.mobile-logo{
+max-width: 150px ;
+margin-left: -20px;
+}
