@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import './NavBar.css'
 import logo from '../Assets/logos/fixlogo.png'
 import { FaBars } from 'react-icons/fa'
-import { FiX } from 'react-icons/fi'
-import { DownOutlined } from '@ant-design/icons';
-import { Dropdown, } from 'antd';
+import { FiX, FiChevronDown } from 'react-icons/fi'
+
+
 
 const NavBar = () => {
 const [showBar, setShowBar] = useState(false);
@@ -13,23 +13,7 @@ const handleNavBar = () =>{
   setShowBar(!showBar)
 }
 
-  const onClick = ({ key }) => {
-    message.info(`Click on item ${key}`);
-  };
-  const items = [
-    {
-      label: '1st menu item',
-      key: '1',
-    },
-    {
-      label: '2nd menu item',
-      key: '2',
-    },
-    {
-      label: '3rd menu item',
-      key: '3',
-    },
-  ];
+
 
 
   return (
@@ -40,21 +24,18 @@ const handleNavBar = () =>{
 
 <div className=' lg:w-4/12 md:w-7/12 mr-5'>
     <ul className='flex justify-around w-full items-center text-1xl '>
-        <li className='cursor-pointer list-none'>Service</li>
-        <li className='cursor-pointer list-none'> <Dropdown
-    menu={{
-      items,
-      onClick,
-    }}
-  >
-    <a onClick={(e) => e.preventDefault()}>
-     
-        Products
-        <DownOutlined className=' ml-1'/>
-      
-    </a>
-  </Dropdown></li>
-        <li className='cursor-pointer list-none'>About us</li>
+        <li className='cursor-pointer list-none' onClick={handleNavBar}>Service</li>
+        <li className='cursor-pointer list-none'> 
+        
+        <div className="dropdown" style={{ float: 'left'}}>
+  <button className="text-1xl cursor-pointer flex items-center ">Products<span><FiChevronDown/></span></button>
+  <div className="dropdown-content text-xl" style={{left: 0}}>
+  <a href="#" onClick={handleNavBar}>Device repair</a>
+  <a href="#" onClick={handleNavBar}>Tech shop</a>
+  <a href="#" onClick={handleNavBar}>Smart delivery</a>
+  </div>
+</div></li>
+        <li className='cursor-pointer list-none' onClick={handleNavBar}>About us</li>
 
         <div className='flex gap-5 items-center '>
         <li className='text-white w-20 list-none  flex justify-center p-2 rounded-lg cursor-pointer'>Login</li>
@@ -83,22 +64,20 @@ const handleNavBar = () =>{
         <div className={showBar ? 'bg-white  w-full h-screen z-10 absolute top-14' : 'hidden'}>
           <div className='w-full  '>
             <ul className='text-3xl text-black font-medium ml-10 flex flex-col gap-10 mt-10'>
-            <li className='cursor-pointer list-none'>Service</li>
-        <li className='cursor-pointer list-none'>About us</li>
-        <li className='cursor-pointer list-none'>
-          <Dropdown
-    menu={{
-      items,
-      onClick,
-    }}
-  >
-    <a onClick={(e) => e.preventDefault()}>
-     
-        Products
-        <DownOutlined className='text-2xl ml-1'/>
-      
-    </a>
-  </Dropdown></li>
+            <li className='cursor-pointer list-none w-36' onClick={handleNavBar}>Service</li>
+        <li className='cursor-pointer list-none w-36' onClick={handleNavBar}>About us</li>
+        <li className='cursor-pointer list-none w-36 outline-none'>
+
+        <div className="dropdown" style={{ float: 'left'}}>
+        <button className="text-1xl cursor-pointer dropdown-btn text-3xl text-black font-medium flex items-center ">Products <span><FiChevronDown/></span></button>
+  <div className="dropdown-content w-44 text-xl " style={{left: 0}}>
+  <a href="#" onClick={handleNavBar}>Device repair</a>
+  <a href="#" onClick={handleNavBar}>Tech shop</a>
+  <a href="#" onClick={handleNavBar}>Smart delivery</a>
+  </div>
+</div>
+
+</li>
             </ul>
           </div>
         </div>
