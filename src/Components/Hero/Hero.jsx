@@ -104,7 +104,7 @@ const Hero = () => {
         <div className="h-full flex items-center justify-center md:justify-start">
           <>
             {/* small cont inside the hero section */}
-            <div className="bg-white md:w-4/12 w-11/12 cus-triger md:ml-40">
+            <div className="bg-white lg:w-4/12 md:w-9/12 w-11/12 cus-triger md:ml-10 lg:ml-40">
               {/* small nav  start */}
               <div className="w-full flex justify-between  items-center h-20 bg-pink-200">
                 <div

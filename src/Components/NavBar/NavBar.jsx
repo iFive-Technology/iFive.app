@@ -38,7 +38,7 @@ const handleNavBar = () =>{
 <div className='bg-black h-14 text-white flex items-center px-3 justify-between'>
     <div className=''><img src={logo} alt="" className='logo' /></div>
 
-<div className=' w-4/12 mr-20'>
+<div className=' lg:w-4/12 md:w-7/12 mr-5'>
     <ul className='flex justify-around w-full items-center text-1xl '>
         <li className='cursor-pointer list-none'>Service</li>
         <li className='cursor-pointer list-none'> <Dropdown
@@ -57,7 +57,7 @@ const handleNavBar = () =>{
         <li className='cursor-pointer list-none'>About us</li>
 
         <div className='flex gap-5 items-center '>
-        <li className='cursor-pointer list-none'>Login</li>
+        <li className='text-white w-20 list-none  flex justify-center p-2 rounded-lg cursor-pointer'>Login</li>
         <li className='bg-white text-black w-20 list-none  flex justify-center p-2 rounded-lg cursor-pointer'>Sign up</li>
         </div>
 

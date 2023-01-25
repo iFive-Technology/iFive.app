@@ -1,8 +1,16 @@
 import './About.css'
 import float from '../Assets/images/flot.png'
+import background from '../Assets/images/backgrondimg.jpg'
+
 const About = () => {
     return (
-        <div className='about'>
+        <div className='about'  style={{
+            backgroundImage: `url(${background})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        
+          }}>
             <div className="text-area">
                 <h2 className="title">We Can Fix It Almost
                     As Fast As You Can
