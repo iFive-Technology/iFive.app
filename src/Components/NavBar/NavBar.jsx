@@ -22,7 +22,7 @@ const handleNavBar = () =>{
 <div className='bg-black h-14 text-white flex items-center px-3 justify-between'>
     <div className=''><img src={logo} alt="" className='logo' /></div>
 
-<div className=' lg:w-4/12 md:w-7/12 mr-5'>
+<div className=' lg:w-5/12 md:w-7/12 mr-5'>
     <ul className='flex justify-around w-full items-center text-1xl '>
         <li className='cursor-pointer list-none' onClick={handleNavBar}>Service</li>
         <li className='cursor-pointer list-none'> 
@@ -50,10 +50,10 @@ const handleNavBar = () =>{
 
 
 {/* mobile nav bar */}
-<div  className=' relative bg-black h-14 w-full md:hidden p-0 m-0 flex items-center'>
+<div  className=' relative bg-black h-14 w-full md:hidden p-0 m-0 flex justify-between items-center'>
 <div className=' flex items-center h-14'><img src={logo} alt="" className='mobile-logo' /></div>
 
-<div className='flex  items-center w-11/12 gap-5'>
+<div className='flex  items-center  gap-5 mr-5'>
   <div className='flex gap-3 ml-5'>
   <li className=' text-white w-20 list-none flex justify-center p-1 rounded-lg cursor-pointer'>Login</li>
         <li className='bg-white text-black w-20 list-none flex justify-center p-1 rounded-lg cursor-pointer'>Sign up</li>

@@ -1,7 +1,6 @@
 import './App.css'
-import About from './Components/About/About'
-import Hero from './Components/Hero/Hero'
-import WhyUs from './Components/Us/WhyUs'
+import Footer from './Components/Footer/Footer'
+import Home from './Pages/Home/Home'
 
 
 function App() {
@@ -9,9 +8,8 @@ function App() {
 
   return (
     <div className="App">
-      <Hero />
-      <About />
-      <WhyUs />
+      <Home />
+      <Footer />
     </div>
   )
 }
